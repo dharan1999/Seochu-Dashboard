@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Blog Analysis</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'>
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css'><link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" type="text/css" href="stylep.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:400,700">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js"></script>
+  <script type="text/javascript" src="scriptp.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="stylepall.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<section>
+  <header>
+    <nav class="rad-navigation">
+      <div class="rad-logo-container">
+        <a href="#" class="rad-logo">Scorecard</a>
+        <a href="#" class="rad-toggle-btn pull-right"><i class="fa fa-bars"></i></a>
+      </div>
+      <div class="rad-top-nav-container">
+        <ul class="links">
+          <!-- <li>
+            <a class="rad-menu-item" href="#"><i class="fa fa-comment-o"></i></a>
+          </li>
+          <li class="rad-dropdown"><a class="rad-menu-item" href="#"><i class="fa fa-envelope-o"><span class="rad-menu-badge">3</span></i></a>
+            <ul class="rad-dropmenu-item">
+              <li class="rad-dropmenu-header"><a href="#">Your Notifications</a></li>
+              <li class="rad-notification-item">
+                <a class="rad-notification-content" href="#">
+
+                </a>
+              </li>
+              <li class="rad-dropmenu-footer"><a href="#">See all notifications</a></li>
+            </ul>
+          </li>
+          <li class="rad-dropdown"><a class="rad-menu-item" href="#"><i class="fa fa-bell-o"><span class="rad-menu-badge">49</span></i></a>
+            <ul class="rad-dropmenu-item">
+              <li class="rad-dropmenu-header"><a href="#">Your Alerts</a></li>
+              <li class="rad-notification-item">
+                <a class="rad-notification-content" href="#">
+
+                </a>
+              </li>
+              <li class="rad-dropmenu-footer"><a href="#">See all alerts</a></li>
+            </ul>
+          </li> -->
+        </ul>
+      </div>
+    </nav>
+  </header>
+</section>
+<aside>
+  <nav class="rad-sidebar">
+    <ul>
+      <li>
+        <a href="index.html" class="inbox">
+          <i class="fa fa-dashboard"><span class="icon-bg rad-bg-success"></span></i>
+          <span class="rad-sidebar-item">Dashboard</span>
+        </a>
+      </li>
+      <li>
+        <a href="performance.html">
+          <i class="fa fa-bar-chart-o">
+						<span class="icon-bg rad-bg-danger"></span>
+					</i>
+          <span class="rad-sidebar-item">Performance</span>
+        </a>
+      </li>
+      <li><a href="lines.html" class="snooz"><i class="fa fa-line-chart"><span class="icon-bg rad-bg-primary"></span></i><span class="rad-sidebar-item">Line Chart Analysis</span></a></li>
+      <li><a href="#" class="done"><i class="fa fa-area-chart"><span class="icon-bg rad-bg-warning"></span></i><span class="rad-sidebar-item">Heat maps</span></a></li>
+      <li><a href="#"><i class="fa fa-wrench"><span class="icon-bg rad-bg-violet"></span></i><span class="rad-sidebar-item">Customize your Blog</span></a></li>
+    </ul>
+  </nav>
+</aside>
+<main>
+  <section>
+    <div class="rad-body-wrapper">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4 col-sm-4">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Performance1</h3>
+              </div>
+              <div class="panel-body">
+                         <div class="metric participation" data-ratio=".95">
+                        <svg viewBox="0 0 1000 500">
+                        <path d="M 950 500 A 450 450 0 0 0 50 500"></path>
+                        <text class='percentage' text-anchor="middle" alignment-baseline="middle" x="500" y="300" font-size="140" font-weight="bold">0%</text>
+                        <text class='title' text-anchor="middle" alignment-baseline="middle" x="500" y="450" font-size="90" font-weight="normal">Participation</text>
+                        </svg>
+                   </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Performance2</h3>
+              </div>
+              <div class="panel-body">
+                  <div class="metric completion" data-ratio=".72">
+                      <svg viewBox="0 0 1000 500">
+                         <path d="M 950 500 A 450 450 0 0 0 50 500"></path>
+                            <text class='percentage' text-anchor="middle" alignment-baseline="middle" x="500" y="300" font-size="140" font-weight="bold">0%</text>
+                           <text class='title' text-anchor="middle" alignment-baseline="middle" x="500" y="450" font-size="90" font-weight="normal">Goal completion</text>
+                    </svg>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+          <!-- here-->
+          <div class="col-md-4 col-sm-4">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Performance3</h3>
+              </div>
+              <div class="panel-body">
+                  <div class="metric blocked" data-ratio=".27">
+                    <svg viewBox="0 0 1000 500">
+                        <path d="M 950 500 A 450 450 0 0 0 50 500"></path>
+                        <text class='percentage' text-anchor="middle" alignment-baseline="middle" x="500" y="300" font-size="140" font-weight="bold">0%</text>
+                        <text class='title' text-anchor="middle" alignment-baseline="middle" x="500" y="450" font-size="90" font-weight="normal">Blockers</text>
+                      </svg>
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- overall performance -->
+          <div class="row">
+          <div class="col-md-12">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Overall Performance</h3>
+              </div>
+              <div class="panel-body">
+                <div id="chart"></div>
+                    <h2 style="text-align: center; color: rgba(0,0,0,.6)">Blog Performance</h2>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js" charset="utf-8"></script>
+                <!--  <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.min.js"></script> -->
+                  <script type="text/javascript" src="scriptpall.js"></script>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        </div>
+        
+      </div>
+    </div>
+  </section>
+</main>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
